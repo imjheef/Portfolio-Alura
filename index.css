@@ -36,3 +36,11 @@ ol {
   gap: 10px;
 
 }
+
+.profile_picture {
+  height: 240px;
+}
+
+.main_container {
+  display: flex;
+}
