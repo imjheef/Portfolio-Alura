@@ -1,4 +1,4 @@
-html{
+html {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   color: #464646;
@@ -6,31 +6,31 @@ html{
 
 /* * HEADER */
 
-header{
+header {
   border: red 1px solid;
   display: flex;
   justify-content: space-evenly;
 
 }
 
-nav{
+nav {
   display: flex;
   border: red 1px solid;
   align-items: center;
 }
 
-ol{
+ol {
   display: flex;
-  gap: 18px;  
+  gap: 18px;
   list-style-type: none;
   font-size: 14px;
 }
 
-.email{
+.email {
   font-weight: bold;
 }
 
-.container_logo_name{
+.container_logo_name {
   display: flex;
   align-items: center;
   gap: 10px;
