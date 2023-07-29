@@ -1,14 +1,17 @@
 html {
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  color: #464646;
+  font-family: 'Raleway';
+  display: flex;
+  width: 1440px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;  
 }
 
 /* * HEADER */
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
 }
 
@@ -29,6 +32,10 @@ ol {
   font-weight: bold;
 }
 
+.introduction{
+  font-size: 22px;
+}
+
 .container_logo_name {
   display: flex;
   align-items: center;
@@ -37,15 +44,25 @@ ol {
 }
 
 .profile_picture {
-  height: 240px;
+  height: 360px;
+  margin: 0 0 0 2rem;
   border: solid 2px #464646;
   border-radius: 100%;
 }
 
-.main_container {
+.main_container{
+  
   display: flex;
-  justify-content: center;
+  width: 1136px;
+  justify-content: space-between;
   align-items: center;
+}
+
+.main_container h1{
+  color: #464646;
+  font-size: 56px;
+  font-style: bol;
+  font-weight: 800;
+  line-height: normal;
   background-color: rgba(255, 0, 0, 0.178);
-  margin: 2rem;
 }
