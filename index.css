@@ -1,10 +1,10 @@
-html {
+body {
+  background: #EDEDED;
   font-family: 'Raleway';
   display: flex;
-  width: 1440px;
   flex-direction: column;
   align-items: center;
-  gap: 32px;  
+  gap: 32px;
 }
 
 /* * HEADER */
@@ -12,7 +12,13 @@ html {
 header {
   display: flex;
   justify-content: space-evenly;
-
+  font-family: Raleway;
+  display: flex;
+  width: 1136px;
+  padding: 32px;
+  justify-content: space-between;
+  background-color: rgba(255, 0, 0, 0.178);
+  align-items: center;
 }
 
 nav {
@@ -28,12 +34,21 @@ ol {
   font-size: 14px;
 }
 
-.email {
+.email a {
+  color: #464646;
   font-weight: bold;
 }
 
-.introduction{
+.email a:hover {
+  color: rgb(0, 100, 143);
+  border: #464646 dashed 2.5px;
+  height: 1rem;
+}
+
+.introduction {
   font-size: 22px;
+  margin: atuo;
+
 }
 
 .container_logo_name {
@@ -50,19 +65,65 @@ ol {
   border-radius: 100%;
 }
 
-.main_container{
-  
-  display: flex;
+.main_container {
   width: 1136px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.main_container h1{
+.main_container h1 {
   color: #464646;
   font-size: 56px;
   font-style: bol;
   font-weight: 800;
   line-height: normal;
-  background-color: rgba(255, 0, 0, 0.178);
+}
+
+.about_me {
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  background-color: #EAF2FD;
+}
+
+.skills {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 1136px;
+}
+
+.skills_items{
+  background-color: #FFF;
+  display: flex;
+  width: 176px;
+  height: 174px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.hobbies  {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 1136px;
+}
+
+.hobbies_items{
+  background-color: #FFF;
+  display: flex;
+  width: 176px;
+  height: 174px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 8px;
 }
