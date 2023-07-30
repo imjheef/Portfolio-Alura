@@ -1,12 +1,11 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   background: #EDEDED;
   font-family: 'Raleway';
-  align-items: center;
-  gap: 32px;
   margin: auto;
-  width: 1136px;
 }
 
 /* * HEADER */
@@ -16,10 +15,8 @@ header {
   justify-content: space-evenly;
   font-family: Raleway;
   display: flex;
-  width: 1136px;
   padding: 32px;
   justify-content: space-between;
-  background-color: rgba(255, 0, 0, 0.178);
   align-items: center;
 }
 
@@ -59,14 +56,13 @@ ol {
 }
 
 .profile_picture {
-  height: 360px;
+  height: 340px;
   margin: 0 0 0 2rem;
   border: solid 2px #464646;
   border-radius: 100%;
 }
 
 .main_container {
-  /* width: 1136px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,15 +85,14 @@ ol {
 ol{
   display: flex;
   flex-direction: co;
-  width: 1136px;
 }
 
 .skills {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  width: 1136px;
   margin: 0 152px;
+
 }
 
 .skills_items{
@@ -117,7 +112,6 @@ ol{
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  width: 1136px;
   margin: 0 152px;
 
 }
