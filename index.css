@@ -82,20 +82,13 @@ ol {
   background-color: #EAF2FD;
 }
 
-ol{
-  display: flex;
-  flex-direction: co;
-}
 
 .skills {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin: 0 152px;
-
+  padding: 4rem;
+  gap: 0.625rem;
 }
 
-.skills_items{
+.skills_items {
   background-color: #FFF;
   display: flex;
   width: 176px;
@@ -105,18 +98,22 @@ ol{
   justify-content: flex-end;
   align-items: flex-start;
   gap: 8px;
-  
+
 }
 
-.hobbies  {
+.hobbies {
+  padding: 4rem;
+  gap: 0.625rem;
+}
+
+.hobbies_container {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  margin: 0 152px;
-
+  gap: 1rem;
 }
 
-.hobbies_items{
+
+.hobbies_items {
   background-color: #FFF;
   display: flex;
   width: 176px;
