@@ -1,7 +1,6 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
   background: #EDEDED;
   font-family: 'Raleway';
@@ -12,25 +11,23 @@ body {
 
 header {
   display: flex;
-  justify-content: space-evenly;
-  font-family: Raleway;
-  display: flex;
-  padding: 32px;
   justify-content: space-between;
   align-items: center;
+  /* gap: 21rem; */
+  padding: 32px;
 }
 
 nav {
   display: flex;
   align-items: center;
-
 }
 
 ol {
   display: flex;
+  flex-direction: row;
   gap: 18px;
-  list-style-type: none;
   font-size: 14px;
+  list-style: none;
 }
 
 .email a {
@@ -78,14 +75,17 @@ ol {
 }
 
 .about_me {
-  padding: 4rem;
+  padding: 64px;
   gap: 0.625rem;
   background-color: #EAF2FD;
 }
 
-
-.skills, .hobbies {
+section > h2{
   text-align: center;
+}
+
+.skills, .hobbies{
+  align-items: center;
   padding: 2rem;
   gap: 0.625rem;
 }
@@ -93,32 +93,34 @@ ol {
 .skills_items {
   background-color: #FFF;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 176px;
   height: 174px;
   padding: 16px;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
   gap: 8px;
 
-}
-
-
-.hobbies_container {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
 }
 
 
 .hobbies_items {
   background-color: #FFF;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 176px;
   height: 174px;
   padding: 16px;
+  gap: 8px;
+}
+
+.container_academic {
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
+  background-color: #FFF;
+  width: 176px;
+  height: 174px;
+  padding: 16px;
   gap: 8px;
 }
