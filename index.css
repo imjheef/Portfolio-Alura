@@ -114,13 +114,23 @@ section > h2{
   gap: 8px;
 }
 
-.container_academic {
+.container {
   display: flex;
+  padding: 5.125rem;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+  gap: 20rem;
+  align-self: stretch;
+  background-color: #EAF2FD;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #FFF;
-  width: 176px;
-  height: 174px;
-  padding: 16px;
-  gap: 8px;
+  width: 23rem;
+  height: 17.875rem;
+  padding: 1rem;
+  gap: 0.625rem;
 }
