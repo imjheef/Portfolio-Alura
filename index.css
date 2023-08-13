@@ -102,7 +102,7 @@ section>h2 {
 .academic_items,
 .skills_items {
   background-color: #FFF;
-0  display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 176px;
