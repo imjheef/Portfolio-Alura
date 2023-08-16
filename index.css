@@ -24,21 +24,29 @@ nav {
 
 ol {
   display: flex;
-  flex-direction: row;
-  gap: 18px;
+  justify-content: center;
+  padding: 0;
+  gap: 2rem;
   font-size: 14px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
-.email a {
+.email {
   color: #464646;
   font-weight: bold;
 }
 
-.email a:hover {
+.email:hover {
   color: rgb(0, 100, 143);
-  border: #464646 dashed 2.5px;
+  outline: #464646 dashed 2.5px;
   height: 1rem;
+}
+
+.main_items {
+  flex-direction: r;
+  flex: auto;
+  margin: 4rem;
 }
 
 .introduction {
@@ -49,22 +57,19 @@ ol {
   display: flex;
   align-items: center;
   gap: 10px;
-
 }
 
+
 .profile_picture {
-  height: 340px;
-  margin: 0 0 0 2rem;
+  height: 240px;
+  width: auto;
+
+  max-width: 100%;
+  max-height: 90vh;
   border: solid 2px #464646;
   border-radius: 100%;
 }
 
-.main_container {
-  margin: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .main_container h1 {
   color: #464646;
@@ -74,46 +79,37 @@ ol {
   line-height: normal;
 }
 
-<<<<<<< HEAD
 .container_about_me, 
 .container_academic  {
-=======
-.about_me {
->>>>>>> parent of 0d29e31 (Merge branch 'main' of https://github.com/imjheef/Portfolio-Alura)
   padding: 64px;
   gap: 0.625rem;
   background-color: #EAF2FD;
 }
 
-section > h2{
+section>h2 {
   text-align: center;
 }
 
-.skills, .hobbies{
+.container_skills,
+.container_hobbies{
   align-items: center;
-  padding: 2rem;
+  margin: 4rem;
+  flex: auto;
   gap: 0.625rem;
 }
 
-<<<<<<< HEAD
 
 .hobbies_items,
 .skills_items{
-=======
-.skills_items {
->>>>>>> parent of 0d29e31 (Merge branch 'main' of https://github.com/imjheef/Portfolio-Alura)
   background-color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 176px;
-  height: 174px;
+  height: 176px;
   padding: 16px;
   gap: 8px;
-<<<<<<< HEAD
   flex: auto;
-=======
->>>>>>> parent of 0d29e31 (Merge branch 'main' of https://github.com/imjheef/Portfolio-Alura)
 
 }
 
@@ -125,7 +121,6 @@ section > h2{
   gap: 1rem;
 }
 
-<<<<<<< HEAD
 .academic_items_img{
   display: flex;
   flex: auto;
@@ -133,36 +128,8 @@ section > h2{
   height: 17.8rem;
   padding: 1rem;
   background-color: #FFF;
-=======
-.hobbies_items {
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 176px;
-  height: 174px;
-  padding: 16px;
-  gap: 8px;
->>>>>>> parent of 0d29e31 (Merge branch 'main' of https://github.com/imjheef/Portfolio-Alura)
 }
 
-.container {
-  display: flex;
-  padding: 5.125rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 20rem;
-  align-self: stretch;
-  background-color: #EAF2FD;
-}
-
-.items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFF;
-  width: 23rem;
-  height: 17.875rem;
-  padding: 1rem;
-  gap: 0.625rem;
+.container_experience{
+  text-align: center;
 }
