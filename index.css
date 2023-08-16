@@ -79,7 +79,8 @@ ol {
   line-height: normal;
 }
 
-.container_about_me, .container_academic  {
+.container_about_me, 
+.container_academic  {
   padding: 64px;
   gap: 0.625rem;
   background-color: #EAF2FD;
@@ -99,8 +100,7 @@ section>h2 {
 
 
 .hobbies_items,
-.academic_items,
-.skills_items {
+.skills_items{
   background-color: #FFF;
   display: flex;
   flex-direction: column;
@@ -110,14 +110,24 @@ section>h2 {
   padding: 16px;
   gap: 8px;
   flex: auto;
+
 }
 
+.container_academic > div {
+  display: flex;
+  flex-flow: wrap;
+  outline: red solid 2px;
+  justify-content: center;
+  gap: 1rem;
+}
 
-.academic_items ~ img{
-  height: 10rem;
-  /* padding: rem; */
-  /* width: 12rem; */
-  background-color: #1888;
+.academic_items_img{
+  display: flex;
+  flex: auto;
+  width: 23rem;
+  height: 17.8rem;
+  padding: 1rem;
+  background-color: #FFF;
 }
 
 .container_experience{
