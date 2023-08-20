@@ -14,8 +14,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 21rem; */
-  padding: 32px;
+  margin: 0 3rem;
+}
+
+.disclaimer{
+  background: rgba(253, 233, 169, 0.463);
+  border: solid rgba(255, 166, 0, 0.407) 3px;
+  padding: .5rem;
+  border-radius: 1rem;
+  margin: 0rem 10rem;
+  text-align: center;
+  font-style: italic;
+  position: sticky;
+  top: .5rem;
+}
+
+.disclaimer::before{
+  filter: blur(1rem);
+
 }
 
 nav {
@@ -45,7 +61,6 @@ ol {
 }
 
 .main_items {
-  flex-direction: ;
   flex: auto;
   margin: 4rem;
 }
