@@ -22,6 +22,7 @@ header {
   background: rgba(253, 233, 169, 0.463);
   border: solid rgba(255, 166, 0, 0.407) 3px;
   padding: .5rem;
+  font-size: 1rem;
   border-radius: 1rem;
   margin: 0rem 10rem;
   text-align: center;
@@ -82,7 +83,7 @@ a {
   text-decoration: none;
 }
 
-.a_links_style:hover{
+.a_links_style:hover {
   color: #00648f;
 }
 
@@ -116,6 +117,10 @@ a {
   border-radius: 100%;
 }
 
+.p_container {
+  font-size: 1rem;
+  width: 47rem;
+}
 
 .main_container h1 {
   color: #464646;
@@ -162,7 +167,6 @@ section>h2 {
 .container_academic>div {
   display: flex;
   flex-flow: wrap;
-  outline: red solid 2px;
   justify-content: center;
   gap: 1rem;
 }
@@ -176,5 +180,49 @@ section>h2 {
 }
 
 .container_experience {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.experience_items {
+  display: flex;
+  align-items: center;
+
+}
+
+.contact_container {
+  display: flex;
+  padding: 4rem;
+  justify-content: center;
+  gap: 0.625rem;
+  background: #EAF2FD;
+
+}
+
+.input_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  padding: 1rem 2rem;
+}
+
+button{
+  color: #FFF;
+  background: #2A7AE4;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  border: solid 1px #FFF;
+  border-radius: 8px;
+}
+
+button:hover{
+  filter: saturate(130%);
+  box-shadow: 2px;
+  
 }
