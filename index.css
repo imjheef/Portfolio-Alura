@@ -2,10 +2,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* width: 90rem; */
   background: #EDEDED;
   font-family: 'Raleway';
   margin: auto;
+  font-size: 12px;
 }
 
 /* * HEADER */
@@ -17,7 +17,8 @@ header {
   margin: 0 3rem;
 }
 
-.disclaimer{
+
+.disclaimer {
   background: rgba(253, 233, 169, 0.463);
   border: solid rgba(255, 166, 0, 0.407) 3px;
   padding: .5rem;
@@ -25,48 +26,77 @@ header {
   margin: 0rem 10rem;
   text-align: center;
   font-style: italic;
+  font-weight: bold;
   position: sticky;
   top: .5rem;
 }
 
-.disclaimer::before{
-  filter: blur(1rem);
-
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
 ol {
   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
   justify-content: center;
-  padding: 0;
+  align-items: center;
   gap: 2rem;
   font-size: 14px;
-  list-style: none;
-  flex-wrap: wrap;
+
 }
 
 .email {
   color: #464646;
   font-weight: bold;
+  padding: 5px 12px;
 }
 
 .email:hover {
-  color: rgb(0, 100, 143);
+  color: #00648f;
   outline: #464646 dashed 2.5px;
-  height: 1rem;
 }
 
 .main_items {
+  display: flex;
   flex: auto;
-  margin: 4rem;
+  margin: 1rem 4rem;
+  gap: 1.5rem;
+}
+
+.main_items>div>h1 {
+  font-size: 3.35rem;
+  color: #464646;
 }
 
 .introduction {
   font-size: 22px;
+  color: #464646;
+}
+
+.link_container,
+a {
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+  color: #464646;
+}
+
+.a_links_style {
+  text-decoration: none;
+}
+
+.a_links_style:hover{
+  color: #00648f;
+}
+
+
+.link_items {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.link_items:hover {
+  outline: #464646 dashed 2px;
 }
 
 .container_logo_name {
@@ -95,8 +125,8 @@ ol {
   line-height: normal;
 }
 
-.container_about_me, 
-.container_academic  {
+.container_about_me,
+.container_academic {
   padding: 64px;
   gap: 0.625rem;
   background-color: #EAF2FD;
@@ -107,7 +137,7 @@ section>h2 {
 }
 
 .container_skills,
-.container_hobbies{
+.container_hobbies {
   align-items: center;
   margin: 4rem;
   flex: auto;
@@ -116,7 +146,7 @@ section>h2 {
 
 
 .hobbies_items,
-.skills_items{
+.skills_items {
   background-color: #FFF;
   display: flex;
   flex-direction: column;
@@ -129,7 +159,7 @@ section>h2 {
 
 }
 
-.container_academic > div {
+.container_academic>div {
   display: flex;
   flex-flow: wrap;
   outline: red solid 2px;
@@ -137,16 +167,14 @@ section>h2 {
   gap: 1rem;
 }
 
-.academic_items_img{
+.academic_items_img {
   display: flex;
   flex: auto;
-  width: 23rem;
-  height: 17.8rem;
-  padding: 1rem;
+  height: 7.8rem;
+  padding: 4rem;
   background-color: #FFF;
 }
 
-.container_experience{
+.container_experience {
   text-align: center;
 }
-
