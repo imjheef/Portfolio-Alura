@@ -1,3 +1,7 @@
+*{
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -20,10 +24,10 @@ header {
 
 .disclaimer {
   background: rgba(253, 233, 169, 0.463);
-  border: solid rgba(255, 166, 0, 0.407) 3px;
-  padding: .5rem;
+  border: 3px solid rgba(255, 166, 0, 0.407);
+  padding: 0 1rem;
   font-size: 1rem;
-  border-radius: 1rem;
+  border-radius: .5rem;
   margin: 0rem 10rem;
   text-align: center;
   font-style: italic;
@@ -74,9 +78,17 @@ ol {
 .link_container,
 a {
   display: flex;
-  flex-flow: row;
-  gap: 1rem;
+  gap: 2rem;
   color: #464646;
+}
+
+.link_items {
+  display: flex;
+  justify-content: start;
+  gap: 0.25rem;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  /* padding: 0 .5rem; */
 }
 
 .a_links_style {
@@ -87,17 +99,8 @@ a {
   color: #00648f;
 }
 
-
-.link_items {
-  display: flex;
-  justify-content: start;
-  gap: 1rem;
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
 .link_items:hover {
-  outline: #464646 dashed 2px;
+  outline: #464646 dashed .15rem;
 }
 
 .container_logo_name {
@@ -119,7 +122,7 @@ a {
 
 .p_container {
   font-size: 1rem;
-  width: 47rem;
+  max-width: 47rem;
 }
 
 .main_container h1 {
@@ -149,16 +152,15 @@ section>h2 {
   gap: 0.625rem;
 }
 
-
 .hobbies_items,
 .skills_items {
   background-color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 176px;
-  height: 176px;
-  padding: 16px;
+  width: 11rem;
+  height: 10.875rem;
+  padding: 1rem;
   gap: 8px;
   flex: auto;
 
@@ -186,6 +188,13 @@ section>h2 {
   gap: 2rem;
 }
 
+/* img{
+  max-width: 80%;
+  width: 100%;
+  height: auto;
+  margin: 2rem;
+} */
+
 .experience_items {
   display: flex;
   align-items: center;
@@ -198,7 +207,7 @@ section>h2 {
   justify-content: center;
   gap: 0.625rem;
   background: #EAF2FD;
-
+  flex-wrap: wrap;
 }
 
 .input_container {
@@ -242,7 +251,7 @@ form>.btn_submit{
   margin: 1rem 0;
 }
 
-form>button{
+button{
   margin:  1rem;
 }
 
@@ -256,7 +265,6 @@ button:hover{
 .experience_items > div{
   margin: 1rem;
   gap: 1rem;
-
 }
 
 footer{
