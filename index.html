@@ -23,11 +23,21 @@
     </div>
     <nav>
       <ol>
-        <a href="#"><li class="links">About me</li></a>
-        <a href="#"><li class="links">Skills</li></a>
-        <a href="#"><li class="links">Hobbies</li></a>
-        <a href="#"><li class="links">Studies</li></a>
-        <a href="#"><li class="links">Project</li></a>
+        <a href="#">
+          <li class="links">About me</li>
+        </a>
+        <a href="#">
+          <li class="links">Skills</li>
+        </a>
+        <a href="#">
+          <li class="links">Hobbies</li>
+        </a>
+        <a href="#">
+          <li class="links">Studies</li>
+        </a>
+        <a href="#">
+          <li class="links">Project</li>
+        </a>
         <li><a class="email" href="mailto:jhefercorrea@gmail.com">jhefercorrea@gmail.com</a></li>
       </ol>
     </nav>
@@ -65,7 +75,7 @@
   </main>
 
   <section class="container_about_me">
-    <h1>About me</h1>
+    <h1 class="about">About me</h1>
     <div class="p_container">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim
@@ -80,19 +90,26 @@
     <img src="/images/image-signature.svg" height="80" alt="Jheferson Signature example">
   </section>
   <section class="container_skills">
-    <h2>Skills</h2>
-    <ol>
-      <li class="skills_items">HTML5</li>
-      <li class="skills_items">JS</li>
-      <li class="skills_items">PHP</li>
-      <li class="skills_items">NODEJS</li>
-      <li class="skills_items">REACT</li>
-      <li class="skills_items">CSS</li>
-    </ol>
+    <h1 class="titles">Skills</h2>
+      <ol>
+
+        <li class="skills_items">
+          <img src="/images/html-5.svg" alt="Html 5 icon">HTML5
+        </li>
+        <li class="skills_items">
+          <img src="/images/js.svg" alt="Javascript icon">JS
+        </li>
+        <li class="skills_items">
+          <img src="/images/php.svg" alt="PHP icon">PHP
+        </li>
+        <li class="skills_items"><img src="/images/node.svg" alt="Node icon">NODEJS</li>
+        <li class="skills_items"><img src="/images/react.svg" alt="">REACT</li>
+        <li class="skills_items"><img src="/images/css.svg" alt="CSS icon"> CSS</li>
+      </ol>
   </section>
 
   <section class="container_hobbies">
-    <h2>Hobbies</h2>
+    <h1 class="titles">Hobbies</h1>
     <ol>
       <li class="hobbies_items">Watch Series</li>
       <li class="hobbies_items">Listen to relaxing music</li>
@@ -104,29 +121,29 @@
   </section>
 
   <section class="container_academic">
-    <h2 class="">Academic</h2>
-    <div>
-      <div class="academic_items">
-        <img class="academic_items_img" src="/images/image-ufpr.svg" alt="Data Analysis school image">
-        <h3>Data Analysis</h3>
-        <p>Date Here</p>
-      </div>
-      <div class="academic_items">
-        <img class="academic_items_img" src="/images/image-alura.svg" alt="Data Analysis school image">
-        <h3>Front-End</h3>
-        <p>2023 - Alura/OracleONE</p>
-      </div>
-      <div class="academic_items">
-        <img class="academic_items_img" src="/assets/ufrj_logo.png" alt="Data Analysis school image">
-        <h3>Data Analysis</h3>
-        <p>2018 - UFRP</p>
-      </div>
+    <h1 class="titles">Academic</h2>
+      <div>
+        <div class="academic_items">
+          <img class="academic_items_img" src="/images/image-ufpr.svg" alt="Data Analysis school image">
+          <h3>Data Analysis</h3>
+          <p>Date Here</p>
+        </div>
+        <div class="academic_items">
+          <img class="academic_items_img" src="/images/image-alura.svg" alt="Data Analysis school image">
+          <h3>Front-End</h3>
+          <p>2023 - Alura/OracleONE</p>
+        </div>
+        <div class="academic_items">
+          <img class="academic_items_img" src="/assets/ufrj_logo.png" alt="Data Analysis school image">
+          <h3>Data Analysis</h3>
+          <p>2018 - UFRP</p>
+        </div>
 
-    </div>
+      </div>
   </section>
 
   <section class="container_experience">
-    <h1>
+    <h1 class="titles">
       Professional Experience
     </h1>
 
@@ -143,7 +160,6 @@
     </div>
 
     <div class="experience_items">
-      <img src="images/rectangle-game-1.svg" alt="">
       <div>
         <h2>Title for project</h2>
         <p>Short Description</p>
@@ -151,6 +167,7 @@
         <button class="btn_repo">Repository</button>
         <button class="btn_demo">Go to Demo</button>
       </div>
+      <img src="images/rectangle-game-1.svg" alt="">
     </div>
 
     <div class="experience_items">
@@ -165,7 +182,6 @@
     </div>
 
     <div class="experience_items">
-      <img src="images/rectanglegame-2.svg" alt="">
       <div>
         <h2>Title for project</h2>
         <p>Short Description</p>
@@ -173,6 +189,7 @@
         <button class="btn_repo">Repository</button>
         <button class="btn_demo">Go to Demo</button>
       </div>
+      <img src="images/rectanglegame-2.svg" alt="">
     </div>
 
   </section>
@@ -186,7 +203,7 @@
         <input required placeholder="Name" type="name">
         <input required placeholder="Email" type="email">
         <input required placeholder="Subject" type="subject">
-        <textarea required placeholder="Message" type="textarea"></textarea>
+        <textarea required placeholder="Message" type="textarea" rows="8"></textarea>
       </div>
       <button class="btn_submit" type="submit">Submit</button>
     </form>
