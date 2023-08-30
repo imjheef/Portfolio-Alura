@@ -19,6 +19,7 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0 3rem;
@@ -31,7 +32,8 @@ header {
   padding: 0 1rem;
   font-size: 1rem;
   border-radius: .5rem;
-  margin: 0rem 10rem;
+  max-width: 100%;
+  margin: 0 1rem ;
   text-align: center;
   font-style: italic;
   font-weight: bold;
@@ -62,33 +64,39 @@ ol {
 
 .main_items {
   display: flex;
-  flex-direction: column;
-  margin: 1rem 4rem;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 0rem 4rem;
   gap: 1.5rem;
-  background-color: rgba(255, 0, 0, 0.24);
 }
 
-.main_items>div>h1 {
+.main_items .profile_picture {
+  min-width: 3rem;
+  max-width: 100%;
+  height: auto;
+  border: red solid 6cap;
+
+}
+
+.main_items div h1{
   font-size: 3rem;
 }
 
 .profile_picture {
+  min-width: 6.125rem;
   max-width: 100%;
-  height: 440px;
   border: solid 2px #464646;
   border-radius: 100%;
+  margin: 10px;
 }
 
-.introduction {
-  font-size: 22px;
-}
 
-.link_container{
-  /* background-color: rgba(255, 0, 0, 0.24); */
+.link_container {
   display: flex;
-  gap: 1rem;
-  width: 100%;
+  flex-flow: row;
   font-weight: bold;
+  gap: 1rem;
+  max-width: 1vw;
 }
 
 .link_items {
@@ -98,10 +106,6 @@ ol {
   font-size: 1.2rem;
   margin: 1rem 0;
   /* padding: 0 .5rem; */
-}
-
-.a_links_style {
-  text-decoration: none;
 }
 
 .a_links_style:hover {
@@ -138,7 +142,7 @@ ol {
   font-weight: 700;
 }
 
-section>.titles {
+section > .titles {
   text-align: center;
   font-family: Raleway;
   font-size: 2rem;
@@ -172,7 +176,6 @@ section>.titles {
   font-weight: 700;
 }
 
-
 .container_academic>div {
   display: flex;
   flex-flow: wrap;
@@ -180,11 +183,14 @@ section>.titles {
   gap: 1rem;
 }
 
-.academic_items>img {
-  display: flex;
+
+
+.academic_items img {
+  width: 11rem;
+  
   max-width: 100%;
   height: auto;
-  padding: 4rem;
+  padding: 1rem;
   background-color: #FFF;
 }
 
@@ -195,12 +201,10 @@ section>.titles {
   gap: 1rem;
 }
 
-.experience_items,
-.experience_items>img {
-  display: flex;
+.experience_items img {
+  max-width: 100%;
   align-items: center;
   border-radius: 1rem;
-  /* background-color: red; */
 
 }
 
@@ -213,9 +217,17 @@ section>.titles {
   gap: 0.625rem;
 }
 
-.contact_container>img {
-  border-radius: 1rem;
+form h1{
+  font-size: 2rem;
+}
 
+form p{
+  font-size: 1rem;
+}
+
+.contact_container img {
+  border-radius: 1rem;
+  max-width: 100%;
 }
 
 .input_container {
@@ -272,7 +284,7 @@ button:hover {
   outline: solid 2px rgb(78, 169, 243);
 }
 
-.experience_items>div {
+.experience_items div {
   margin: 1rem;
   gap: 2rem;
 }
